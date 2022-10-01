@@ -17,4 +17,9 @@ describe('palindrome checker', () => {
   it('should still detect a palindrome even if the casing is off', () => {
     expect(palindromeChecker.isAPalindrome('Mom')).toBeTruthy();
   });
+
+  it('should be able to tell that "Was It A Rat I Saw" is a palindrome', () => {
+    const str = 'Was It A Rat I Saw';
+    expect(palindromeChecker.isAPalindrome(str)).toBeTruthy();
+  });
 });
