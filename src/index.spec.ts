@@ -10,4 +10,9 @@ describe('palindrome checker', () => {
     const palindromeChecker = new PalindromeChecker();
     expect(palindromeChecker.isAPalindrome('bill')).toBeFalsy();
   });
+
+  it('should still detect a palindrome even if the casing is off', () => {
+    const palindromeChecker = new PalindromeChecker();
+    expect(palindromeChecker.isAPalindrome('Mom')).toBeTruthy();
+  });
 });
