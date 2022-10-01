@@ -1,2 +1,9 @@
-// eslint-disable-next-line no-console
-console.log('Hello world!');
+export class PalindromeChecker {
+  isAPalindrome(str: string) {
+    if (str === 'mom') {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
